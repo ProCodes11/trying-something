@@ -1,0 +1,67 @@
+body {
+  background: #6D5D5D;
+}
+
+* {
+  overflow-y: hidden;
+}
+
+.like, .nice, .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 10px solid silver;
+}
+
+/*hopa*/
+.text {
+  background: black;
+  font-size: 25px;
+  color: white;
+}
+
+.ok {
+  height: 100vh;
+  width: 100%;
+  background: #84817C;
+}
+.ok h2 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+.ok p {
+  color: white;
+  font-size: 30px;
+}
+.ok button {
+  font-size: 15px;
+}
+.ok:hover {
+  background: #715959;
+}
+
+.list a {
+  color: purple;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 850;
+}
+
+.nice {
+  border: 5px solid green;
+}
+
+.im-smart {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: reapeat(4, 1fr);
+  grid-template-columns: reapeat(4, 1fr);
+}

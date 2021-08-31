@@ -1,0 +1,61 @@
+  @import "style2.scss";
+ *{
+    overflow-y: hidden;
+ }
+
+ .like{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 10px solid silver;
+ }
+
+$colorText:white;
+$spacing:30px;
+
+
+
+/*hopa*/
+.text {
+	background: black;
+	font-size: 25px;
+	color: $colorText;
+}
+.ok{
+	height: 100vh;
+    width: 100%;
+    background: #84817C;
+    h2{
+     color: $colorText;
+     font-size: $spacing;
+     text-align: center;
+    }
+    p{
+    color: $colorText;
+    font-size: $spacing;
+    }
+    button{
+    	font-size: 15px;
+    }
+    &:hover{
+    	background: #715959;
+    }
+
+}
+.list{
+   @extend .like;
+    a{
+    color: purple;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 850;
+    }
+ }
+ .nice{
+ @extend .like;
+ border: 5px solid green;
+ }
+.im-smart{
+     display: grid;
+     grid-template-columns: reapeat(4,1fr);
+}
